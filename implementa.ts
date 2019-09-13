@@ -34,7 +34,7 @@ namespace hospital{
     medicoUm.setCodFuncionario(87);
     medicoUm.setNome("Meredith Grey");
     medicoUm.setCpf("876.654.214-54");
-    medicoUm.setCrm(856387);
+    medicoUm.setCrm(622911);
 
     //instanciando o segundo Medico e inserindo valores
     let medicoDois = new Medico();
@@ -48,7 +48,7 @@ namespace hospital{
     medicoTres.setCodFuncionario(11);
     medicoTres.setNome("Alex Karev");
     medicoTres.setCpf("789.349.412-52");
-    medicoTres.setCrm(856387);
+    medicoTres.setCrm(152604);
 
     //instanciando o primeiro Enfermeiro e inserindo valores
     let enfermeiroUm = new Enfermeiro();
@@ -62,14 +62,14 @@ namespace hospital{
     enfermeiroDois.setCodFuncionario(33);
     enfermeiroDois.setNome("Nico Kim");
     enfermeiroDois.setCpf("824.328.504-87");
-    enfermeiroDois.setCoren(58326);
+    enfermeiroDois.setCoren(29748);
 
     //instanciando o terceiro Enfermeiro e inserindo valores
     let enfermeiroTres = new Enfermeiro();
     enfermeiroTres.setCodFuncionario(97);
     enfermeiroTres.setNome("Owen Hunt");
     enfermeiroTres.setCpf("636.803.453-72");
-    enfermeiroTres.setCoren(58326);
+    enfermeiroTres.setCoren(26154);
 
     hospital.addPacientes(pacienteUm);
     hospital.addPacientes(pacienteDois);
