@@ -1,6 +1,7 @@
 ///<reference path="paciente.ts" />
 ///<reference path="enfermeiro.ts" />
 ///<reference path="medico.ts" />
+///<reference path="prontosocorro.ts" />
 
 namespace hospital{
     export class Hospital {
@@ -8,6 +9,7 @@ namespace hospital{
         private _enfermeiros:Array<Enfermeiro> = [];
         private _medicos:Array<Medico> = [];
         private _pacientes:Array<Paciente> = [];
+        private _prontoSocorro:Array<ProntoSocorro> = [];
 
         public getNome(){
             return this._nome;
@@ -35,6 +37,13 @@ namespace hospital{
         }
         public addPacientes(pacientes:Paciente){
             this._pacientes.push(pacientes);
+        }
+
+        public get(){
+            return this._medicos;
+        }
+        public add(medico:Medico){
+            this._medicos.push(medico);
         }
     }
 }

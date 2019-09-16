@@ -14,16 +14,19 @@ var hospital;
     pacienteUm.setCodPaciente(32);
     pacienteUm.setNome("Matheus Costa");
     pacienteUm.setCpf("549.654.324-56");
+    pacienteUm.setSetor("Cardiologia");
     //instanciando o segundo Paciente e inserindo valores
     var pacienteDois = new hospital_1.Paciente();
     pacienteDois.setCodPaciente(57);
     pacienteDois.setNome("Joâo Paulo");
     pacienteDois.setCpf("856.129.421-35");
+    pacienteDois.setSetor("Pedagogia");
     //instanciando o terceiro Paciente e inserindo valores
     var pacienteTres = new hospital_1.Paciente();
     pacienteTres.setCodPaciente(24);
     pacienteTres.setNome("Fylipe Pablo");
     pacienteTres.setCpf("654.684.158-78");
+    pacienteTres.setSetor("Endocrinologia");
     //instanciando o primeiro Medico e inserindo valores
     var medicoUm = new hospital_1.Medico();
     medicoUm.setCodFuncionario(87);
@@ -48,18 +51,21 @@ var hospital;
     enfermeiroUm.setNome("Levi Schmitt");
     enfermeiroUm.setCpf("635-752-026.13");
     enfermeiroUm.setCoren(58326);
+    enfermeiroUm.setSetor("Ortopedia");
     //instanciando o segundo Enfermeiro e inserindo valores
     var enfermeiroDois = new hospital_1.Enfermeiro();
     enfermeiroDois.setCodFuncionario(33);
     enfermeiroDois.setNome("Nico Kim");
     enfermeiroDois.setCpf("824.328.504-87");
     enfermeiroDois.setCoren(29748);
+    enfermeiroDois.setSetor("Ortopedia");
     //instanciando o terceiro Enfermeiro e inserindo valores
     var enfermeiroTres = new hospital_1.Enfermeiro();
     enfermeiroTres.setCodFuncionario(97);
     enfermeiroTres.setNome("Owen Hunt");
     enfermeiroTres.setCpf("636.803.453-72");
     enfermeiroTres.setCoren(26154);
+    enfermeiroTres.setSetor("Traumas");
     hospital.addPacientes(pacienteUm);
     hospital.addPacientes(pacienteDois);
     hospital.addPacientes(pacienteTres);

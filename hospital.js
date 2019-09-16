@@ -1,6 +1,7 @@
 ///<reference path="paciente.ts" />
 ///<reference path="enfermeiro.ts" />
 ///<reference path="medico.ts" />
+///<reference path="prontosocorro.ts" />
 var hospital;
 (function (hospital) {
     var Hospital = /** @class */ (function () {
@@ -8,6 +9,7 @@ var hospital;
             this._enfermeiros = [];
             this._medicos = [];
             this._pacientes = [];
+            this._prontoSocorro = [];
         }
         Hospital.prototype.getNome = function () {
             return this._nome;
@@ -32,6 +34,12 @@ var hospital;
         };
         Hospital.prototype.addPacientes = function (pacientes) {
             this._pacientes.push(pacientes);
+        };
+        Hospital.prototype.get = function () {
+            return this._medicos;
+        };
+        Hospital.prototype.add = function (medico) {
+            this._medicos.push(medico);
         };
         return Hospital;
     }());
