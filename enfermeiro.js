@@ -1,4 +1,5 @@
 ///<reference path="funcionario.ts" />
+///<reference path="isetor.ts" />
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -24,6 +25,12 @@ var hospital;
         };
         Enfermeiro.prototype.setCoren = function (coren) {
             this._coren = coren;
+        };
+        Enfermeiro.prototype.setSetor = function (setor) {
+            this._setor = setor;
+        };
+        Enfermeiro.prototype.mostrarSetor = function () {
+            return this._setor;
         };
         return Enfermeiro;
     }(hospital.Funcionario));
