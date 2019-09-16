@@ -39,11 +39,11 @@ namespace hospital{
             this._pacientes.push(pacientes);
         }
 
-        public get(){
-            return this._medicos;
+        public getProntoSocorro(){
+            return this._prontoSocorro;
         }
-        public add(medico:Medico){
-            this._medicos.push(medico);
+        public addProntoSocorro(prontoSocorro:ProntoSocorro){
+            this._prontoSocorro.push(prontoSocorro);
         }
     }
 }

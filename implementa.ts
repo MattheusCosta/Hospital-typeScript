@@ -77,6 +77,21 @@ namespace hospital{
     enfermeiroTres.setCoren(26154);
     enfermeiroTres.setSetor("Traumas");
 
+    //instanciando o primeiro Pronto Socorro e inserindo valores
+    let prontoSocorroUm = new ProntoSocorro();
+    prontoSocorroUm.setCodProntoSocorro(19);
+    prontoSocorroUm.setEndereco("11800 Astoria Blvd, Houston, TX 77089, EUA");
+
+    //instanciando o segundo Pronto Socorro e inserindo valores
+    let prontoSocorroDois = new ProntoSocorro();
+    prontoSocorroDois.setCodProntoSocorro(15);
+    prontoSocorroDois.setEndereco("12950 E Freeway Service Rd, Houston, TX 77015, EUA");
+
+    //instanciando o terceiro Pronto Socorro e inserindo valores
+    let prontoSocorroTres = new ProntoSocorro();
+    prontoSocorroTres.setCodProntoSocorro(23);
+    prontoSocorroTres.setEndereco("1201 International Dr, Columbia, MO 65202, EUA");
+
     hospital.addPacientes(pacienteUm);
     hospital.addPacientes(pacienteDois);
     hospital.addPacientes(pacienteTres);
@@ -88,6 +103,10 @@ namespace hospital{
     hospital.addMedicos(medicoUm);
     hospital.addMedicos(medicoDois);
     hospital.addMedicos(medicoTres);
+
+    hospital.addProntoSocorro(prontoSocorroUm);
+    hospital.addProntoSocorro(prontoSocorroDois);
+    hospital.addProntoSocorro(prontoSocorroTres);
 
     document.getElementById("hospital").textContent = hospital.getNome();
 
@@ -113,4 +132,12 @@ namespace hospital{
         conteudoMedico += "<tr> <td>"+element.getCodFuncionario()+"</td><td>"+ element.getNome()+"</td><td>"+ element.getCpf()+"</td><td>"+ element.getCrm()+"</td></tr>";
     });
     tabela2.innerHTML = conteudoMedico;
+    
+    let tabela3 = document.getElementById("tabelaProntoSocorro");
+    let conteudoProntoSocorro = " <tr> <th>Codigo</th> <th>Nome</th> <th>CPF</th> <th>CRM</th></tr>";
+    hospital.getProntoSocorro().forEach(element =>{
+        //alert("Medicos: " + element.getNome());
+        conteudoProntoSocorro += "<tr> <td>"+element.getCodProntoSocorro()+"</td><td>"+ element.getEndereco()+"</td></tr>";
+    });
+    tabela3.innerHTML = conteudoProntoSocorro;
 }

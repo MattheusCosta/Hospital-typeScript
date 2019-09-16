@@ -35,11 +35,11 @@ var hospital;
         Hospital.prototype.addPacientes = function (pacientes) {
             this._pacientes.push(pacientes);
         };
-        Hospital.prototype.get = function () {
-            return this._medicos;
+        Hospital.prototype.getProntoSocorro = function () {
+            return this._prontoSocorro;
         };
-        Hospital.prototype.add = function (medico) {
-            this._medicos.push(medico);
+        Hospital.prototype.addProntoSocorro = function (prontoSocorro) {
+            this._prontoSocorro.push(prontoSocorro);
         };
         return Hospital;
     }());
