@@ -4,6 +4,7 @@
 ///<reference path="medico.ts" />
 ///<reference path="enfermeiro.ts" />
 ///<reference path="hospital.ts" />
+///<reference path="prontosocorro.ts" />
 
 namespace hospital{
 
@@ -134,7 +135,7 @@ namespace hospital{
     tabela2.innerHTML = conteudoMedico;
     
     let tabela3 = document.getElementById("tabelaProntoSocorro");
-    let conteudoProntoSocorro = " <tr> <th>Codigo</th> <th>Nome</th> <th>CPF</th> <th>CRM</th></tr>";
+    let conteudoProntoSocorro = " <tr> <th>Codigo</th> <th>Endereço</th></tr>";
     hospital.getProntoSocorro().forEach(element =>{
         //alert("Medicos: " + element.getNome());
         conteudoProntoSocorro += "<tr> <td>"+element.getCodProntoSocorro()+"</td><td>"+ element.getEndereco()+"</td></tr>";

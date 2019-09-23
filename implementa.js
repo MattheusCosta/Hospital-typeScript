@@ -4,6 +4,7 @@
 ///<reference path="medico.ts" />
 ///<reference path="enfermeiro.ts" />
 ///<reference path="hospital.ts" />
+///<reference path="prontosocorro.ts" />
 var hospital;
 (function (hospital_1) {
     //instaciando um Hospital
@@ -112,7 +113,7 @@ var hospital;
     });
     tabela2.innerHTML = conteudoMedico;
     var tabela3 = document.getElementById("tabelaProntoSocorro");
-    var conteudoProntoSocorro = " <tr> <th>Codigo</th> <th>Nome</th> <th>CPF</th> <th>CRM</th></tr>";
+    var conteudoProntoSocorro = " <tr> <th>Codigo</th> <th>Endereço</th></tr>";
     hospital.getProntoSocorro().forEach(function (element) {
         //alert("Medicos: " + element.getNome());
         conteudoProntoSocorro += "<tr> <td>" + element.getCodProntoSocorro() + "</td><td>" + element.getEndereco() + "</td></tr>";
